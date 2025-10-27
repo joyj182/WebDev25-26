@@ -4,7 +4,7 @@ img{
      border-radius: 20px;
     }
 /* Challenge 5: Change the width of the image with an id of "banner" to 95% */
-#banner { 
+#banner{ 
     width: 95%;
 }
 /* Challenge 6: For the HTML element with an id of "bannerSeparator" change the,
@@ -13,7 +13,7 @@ img{
                 3) background image to  linear-gradient(to right, blue, white)
 
 */
-#bannerSeperator {
+#bannerSeperator{
      height: 10px;
      border: 0px solid white; 
      background-image: linear-gradient(to right, blue, white);
