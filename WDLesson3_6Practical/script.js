@@ -28,7 +28,7 @@ function Slope(){
 function BMI(){
     let hei = parseFloat(document.getElementById("h").value);
     let wei = parseFloat(document.getElementById("w").value);
-    let bmi = wei/hei;
+    let bmi = wei/hei**2;
 
     let op3 = document.getElementById("output3");
     op3.innerHTML=`The BMI is: ${bmi}`;
