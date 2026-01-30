@@ -29,14 +29,20 @@
       <div class="card"> 
         <!-- For each challenge fix the error and explain the correction in the comment -->
 
-        <!-- Challenge 1:  What information is required for the calculation? -->
+        <!-- Challenge 1:  What information is required for the calculation? 
+         
+        Height isn't added.-->
         <input type="text" id="r" placeholder="Enter radius">
- 
-        <!-- Challenge 2: Are the event listener and handler correctly added?-->
-        <input type="button" value="Volume" onlick="cylinder">
+        <input type="text" id="hi" placeholder="Enter height">
+        <!-- Challenge 2: Are the event listener and handler correctly added?
+         
+        The event listener is called onclick and the handler is cylinder(), the parentasis is missing. -->
 
-        <!-- Challenge 3: Does the id of the text input match the refenence to it in JS?-->
-        <p id="ouput"></p>
+        <input type="button" value="Volume" onclick="cylinder()">
+
+        <!-- Challenge 3: Does the id of the text input match the refenence to it in JS?
+         The p is supposed to be a div. Id "ouput" is spelled wrong -->
+        <div id="output"></div>
       </div>
     </div>
     <div id="footer" class="container center">
