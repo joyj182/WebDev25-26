@@ -14,9 +14,14 @@
         let message = ""
 
         // Challenge 5: If the guess is lower than secret, set message to "Guess higher" 
+        if (guess < secret){
+          message="guess higher"
+        }
 
         // Challenge 6: If the guess is higher than secret, set message to "Guess lower" 
-
+        if (guess < secret){
+          message="guess higher"
+        }
         // Challenge 7: If the guess is equal to secret, set message to "You got it!" 
 
         output.innerHTML = `<h3>${message}</h3>`
