@@ -29,8 +29,6 @@ function area(){
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
 
-
-
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
 1) Review the HTML for the UI.  Remember dropdown boxes are just input.
 2) You will need to write HTML as part of the output.  
@@ -39,7 +37,7 @@ function pet(){
   let a = document.getElementById("animal").value;
   let e = document.getElementById("emotion").value;
   let op = document.getElementById("output");
-  filename =""
+  filename ="";
 
   if (a == "Bear" && e == "Funny"){
     filename = "funnyBear.jpg";
