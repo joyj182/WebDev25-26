@@ -12,6 +12,21 @@ function name(){
 }
 */
 
+function area(){
+  let l = parseFloat(document.getElementById("len").value);
+  let w = parseFloat(document.getElementById("wid").value);
+
+  let op = document.getElementById("output");
+  let a = l*w;
+
+  if (l<0 || w<0){
+    op.innerHTML =`Inappropriate measurement`;
+  }else{
+    op.innerHTML = ` The area is ${a}`;
+  }
+
+}
+
 /* Challenge 2:  Create the function for Challenge 1 scenario */
 
 
@@ -21,5 +36,34 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
+  let a = document.getElementById("animal").value;
+  let e = document.getElementById("emotion").value;
+  let op = document.getElementById("output");
+  filename =""
 
+  if (a == "Bear" && e == "Funny"){
+    filename = "funnyBear.jpg";
+  }
+
+  if (a == "Bear" && e == "Sad"){
+    filename = "sadBear.jpg";
+  }
+
+  if (a == "Car" && e == "Funny"){
+    filename = "funnyCat.jpg";
+  }
+
+  if (a == "Cat" && e == "Sad"){
+    filename = "sadCat.jpg";
+  }
+
+  if (a == "Dog" && e == "Funny"){
+    filename = "funnyDog.jpg";
+  }
+
+  if (a == "Dog" && e == "Sad"){
+    filename = "sadDog.jpg";
+  }
+
+  op.innerHTML =`<input src="${filename}"> `;
 }
