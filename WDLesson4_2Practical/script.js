@@ -62,6 +62,5 @@ function pet(){
   if (a == "Dog" && e == "Sad"){
     filename = "sadDog.jpg";
   }
-
   op.innerHTML =`<img src="${filename}"> `;
 }
