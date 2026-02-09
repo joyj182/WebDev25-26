@@ -47,7 +47,7 @@ function pet(){
     filename = "sadBear.jpg";
   }
 
-  if (a == "Car" && e == "Funny"){
+  if (a == "Cat" && e == "Funny"){
     filename = "funnyCat.jpg";
   }
 
@@ -63,5 +63,5 @@ function pet(){
     filename = "sadDog.jpg";
   }
 
-  op.innerHTML =`<input src="${filename}"> `;
+  op.innerHTML =`<img src="${filename}"> `;
 }
