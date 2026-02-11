@@ -32,4 +32,5 @@ function BMI(){
 
     let op3 = document.getElementById("output3");
     op3.innerHTML=`The BMI is: ${bmi}`;
+    
 }
