@@ -24,7 +24,7 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkResponse(){
-       let  res = document.getElementById("response").value;
+       let  res = parseInt(document.getElementById("response").value);
        msg = "";
        let op = document.getElementById("output");
       
