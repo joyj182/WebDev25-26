@@ -8,7 +8,7 @@ let correct;
 function generateProblem(){
        let num1 = Math.floor(Math.random() * (20 - 0 +1) + 0);
        let num2 = Math.floor(Math.random() * (20 - 0 +1) + 0);
-       let correct = num1 + num2;
+       correct = num1 + num2 ;
        let problem = document.getElementById("problem");
        problem.innerHTML = `${num1} + ${num2} = `;
 
@@ -24,9 +24,6 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkResponse(){
-       let num1 = Math.floor(Math.random() * (20 - 0 +1) + 0);
-       let num2 = Math.floor(Math.random() * (20 - 0 +1) + 0);
-       let correct = num1 + num2
        let  res = document.getElementById("response").value;
        msg = "";
        let op = document.getElementById("output");
