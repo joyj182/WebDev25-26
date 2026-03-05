@@ -12,3 +12,19 @@ Year 3: $xxxxxx
 ...
 Year N: $xxxxxx
 */
+
+function CalcInterest(){
+    let p = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let n = parseInt(document.getElementById("n").value);
+    let yrs = parseInt(document.getElementById("t").value);
+
+    let op = document.getElementById("output");
+    let build = "";
+
+    for(let t=0; t<= yrs; t +=1){
+        let A = (Math.pow(1+ r/n, n*t))*p;
+        build += `Year ${t}: $ ${A} <br>`;
+    }
+    op.innerHTML  = build;
+}
