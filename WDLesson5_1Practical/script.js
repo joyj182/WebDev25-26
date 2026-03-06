@@ -24,7 +24,7 @@ function CalcInterest(){
 
     for(let t=0; t<= yrs; t +=1){
         let A = (Math.pow(1+ r/n, n*t))*p;
-        build += `Year ${t}: $ ${A} <br>`;
+        build += `Year ${t}: $ ${A.toFixed(2)} <br>`;
     }
     op.innerHTML  = build;
 }
