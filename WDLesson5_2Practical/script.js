@@ -28,7 +28,7 @@ function init(){
       <br>
          <img src="images/pizza${i}.jpg" class="pizza">
          <br>
-         ${p} 
+         $${p} 
          <input type="text" placeholder="Enter Quantity">
          <br>
          <input type="button" value="Buy">
