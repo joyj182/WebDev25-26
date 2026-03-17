@@ -20,7 +20,7 @@ function balance(){
 
     for(let n=0; n<=t; n++){
         let a = (Math.pow(1+ r/n, n*t))*p;
-        build += `<tr> <td>${n}</td> <td>${a}</td> </tr>`;
+        build += `<tr> <td>${n}</td> <td>${a.toFixed(2)}</td> </tr>`;
     }
 
     output.innerHTML=build;
