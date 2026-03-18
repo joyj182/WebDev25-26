@@ -14,15 +14,16 @@ function balance(){
     let p = parseFloat(document.getElementById("p").value);
     let r = parseFloat(document.getElementById("r").value);
     let t = parseInt(document.getElementById("t").value);
+    let N = parseInt(document.getElementById("n").value);
 
     let output = document.getElementById("output");
-    let build = "<table> <tr> <th>Year</th> <th>Money</th> </tr>";
+    let build = "<table> <tr> <th>Year</th> <th>Balance</th> </tr>";
 
     for(let n=0; n<=t; n++){
-        let a = (Math.pow(1+ r/n, n*t))*p;
-        build += `<tr> <td>${n}</td> <td>${a.toFixed(2)}</td> </tr>`;
+        let a = (Math.pow(1+ r/N, n*N))*p;
+        build += `<tr> <td>${n}</td> <td>$${a.toFixed(2)}</td> </tr>`;
     }
-
+    build += `</table>`;
     output.innerHTML=build;
 }
 
