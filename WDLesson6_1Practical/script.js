@@ -11,7 +11,7 @@ let meat_prices = [9.99, 29.99, 12.99, 19.99];
 let meat_titles = ["Beef Tips", "Brisket", "Ribeye", "Steak"];
 
 let seafood_images = ["clams.jpg", "crabs.jpg", "lobster.png", "scallops.jpg", "shrimp.jpg","tuna.jpg"];
-let seafood_prices = [5.99, 3.99, 13.99, 14.50, 9.00, 19.99];
+let seafood_prices = [5.99, 3.99, 13.99, 14.51, 9.00, 19.99];
 let seafood_titles = ["Clams", "Crabs", "Lobster", "Scallops", "Shrimp", "Tuna"];
 
 let dessert_images = ["flan.jpg", "passionberry.jpeg", "oreocup.jpg"];
