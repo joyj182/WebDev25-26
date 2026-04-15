@@ -48,9 +48,9 @@ function showMeats(){
   */
   for(let i=0; i<meats.length; i++){
     build+=`
-      <div>
+      <div class="card">
         <h3> ${meats[i].title}</h3>
-        <img src="${meats[i].image}">
+        <img src="images/${meats[i].image}">
         <p> $${meats[i].price} </p>
     </div>
     `;
@@ -72,9 +72,9 @@ function showSeafood(){
   */
   for(let i=0; i<seafood.length; i++){
     build+=`
-      <div>
+      <div class="card">
         <h3> ${seafood[i].title}</h3>
-        <img src="${seafood[i].image}">
+        <img src="images/${seafood[i].image}">
         <p> $${seafood[i].price} </p>
     </div>
     `;
@@ -98,9 +98,9 @@ function showDesserts(){
   */
   for(let i=0; i<dessert.length; i++){
     build+=`
-      <div>
+      <div class="card">
         <h3> ${dessert[i].title}</h3>
-        <img src="${dessert[i].image}">
+        <img src="images/${dessert[i].image}">
         <p> $${dessert[i].price} </p>
     </div>
     `;
