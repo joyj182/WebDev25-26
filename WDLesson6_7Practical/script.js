@@ -37,7 +37,7 @@ function filterByInjuryAndStreet(){
 
   for(let i = 0; i < data.length; i+=1){
     let crash = data[i];
-    if(crash.off_street_name == st && crash.number_of_persons_injured == injury){
+    if(crash.on_street_name == st && crash.number_of_persons_injured == injury){
       build += `<div class="fitted card">
                  <h3>${crash.on_street_name}</h3>
                  <p>${crash.off_street_name}</p>
@@ -48,11 +48,11 @@ function filterByInjuryAndStreet(){
                  <p>People Injured: ${crash.number_of_persons_injured}</p>
                  <hr>
                  <p>People Killed: ${crash.number_of_persons_killed}</p>
-              </div>` 
+              </div>`; 
       ct += 1;        
     }
   }
-  result.innerHTML = `${ct} Results found.`
+  result.innerHTML = `${ct} Results found.`;
   output.innerHTML = build;
 }
 
@@ -78,11 +78,11 @@ function filterByInjured(){
                  <p>People Injured: ${crash.number_of_persons_injured}</p>
                  <hr>
                  <p>People Killed: ${crash.number_of_persons_killed}</p>
-              </div>` 
+              </div>`; 
       ct += 1;        
     }
   }
-  result.innerHTML = `${ct} Results found.`
+  result.innerHTML = `${ct} Results found.`;
   output.innerHTML = build;
 }
 // Challenge 4: Create an event handler (function) to filter the 311 Service Request by complaint type.
@@ -107,11 +107,11 @@ function filterByKilled(){
                  <p>People Injured: ${crash.number_of_persons_injured}</p>
                  <hr>
                  <p>People Killed: ${crash.number_of_persons_killed}</p>
-              </div>` 
+              </div>`;
       ct += 1;        
     }
   }
-  result.innerHTML = `${ct} Results found.`
+  result.innerHTML = `${ct} Results found.`;
   output.innerHTML = build;
 }
 
