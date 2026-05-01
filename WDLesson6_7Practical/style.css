@@ -28,7 +28,7 @@ nav a:hover{
   background-color:cornflowerblue;
 }
 #banner{
-  background-color:blue;
+  background-color:rgb(54, 114, 204);
   color:white;
 }
 #footer{
@@ -46,6 +46,8 @@ nav a:hover{
   padding:10px;
   border:1px solid gray;
   text-align:center;
+  background-color: rgb(204, 221, 255);
+  
 }
 
 .highlight{
@@ -57,7 +59,7 @@ nav a:hover{
 }
 .button{
   text-decoration:none;
-  background-color:blue;
+  background-color:rgb(94, 0, 182);
   color:white;
   border-radius:4px;
   padding:6px;
@@ -73,6 +75,7 @@ nav a:hover{
   width:150px;
   height:150px;
   object-fit:contain;
+
 }
 
 #leftPanel{
@@ -84,10 +87,16 @@ nav a:hover{
 .fitted{
   max-width:200px;
   min-width:200px;
+  background-color: white;
+  box-shadow: 3px 3px 3px gray;
 }
 #result{
-  background-color: yellow;
-  color:red;
+  background-color: rgb(255, 252, 87);
+  color: rgb(201, 0, 0);
   max-width: 200px;
   font-size: 20px;
+}
+
+.text{
+  box-shadow: 2px 2px 2px gray;
 }
